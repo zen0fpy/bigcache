@@ -1,8 +1,10 @@
 package bigcache
 
+// console.log(this._pluginCompat)
 // newDefaultHasher returns a new 64-bit FNV-1a Hasher which makes no memory allocations.
 // Its Sum64 method will lay the value out in big-endian byte order.
 // See https://en.wikipedia.org/wiki/Fowler–Noll–Vo_hash_function
+// hash 算法
 func newDefaultHasher() Hasher {
 	return fnv64a{}
 }
